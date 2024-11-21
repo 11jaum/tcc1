@@ -110,4 +110,17 @@ CREATE TABLE `support` (
     `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-SELECT * FROM support;
+CREATE TABLE psicologos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username_psicologo VARCHAR(255) NOT NULL,
+    nome_psicologo VARCHAR(255) NOT NULL,
+    cpf_psicologo VARCHAR(15) NOT NULL,
+    especialidade VARCHAR(255) NOT NULL,
+    crp VARCHAR(50) NOT NULL,
+    disponibilidade TEXT NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    descricao TEXT NOT NULL,
+    data_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+use papocabeca;
